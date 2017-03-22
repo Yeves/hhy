@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+      <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+      <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+
+
+		<title>下拉列表</title>
+	</head>
+	<body>
+<div class="container">
+	
+<!--菜单向上还是向下主要是在div盒子的class中来决定，dropdown下拉，dropup上拉-->
+		<div class="dropdown">
+				<button type="button" class="btn dropdown-toggle btn-lg btn-success" id="dropdownMenu1" data-toggle="dropdown" >主题
+					<!--关于按钮大小md就是默认大小，分别可以变成xs、lg、sm-->
+				<span class="caret"></span>
+				</button>
+				
+				<ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu1">
+					<li role="presentation" class="dropdown-header" >下拉菜单标题</li>
+					<li role="presentation"> 
+						<a role="menuitem" tabindex="-1" href="#">java</a>
+					</li>
+					<li role="presentation">
+						<a href="#" role="menuitem" tabindex="-1">数据挖掘</a>
+					</li>
+					<li role="presentation">
+						<a href="#" tabindex="-1" role="menuitem">前端开发</a>
+					</li>
+					<li class="divider" role="presentation"></li>
+					<li role="presentation" class="dropdown-header">下拉菜单标题</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="#">嵌入式系统工程师</a>
+					</li>
+				</ul>
+			</div>
+			
+			<!--指定上拉菜单，、、//相对于下拉菜单来说就是把div的类从dropdown改为dropup
+			<div class="dropup" style="margin-top: 150px;">
+				<button type="button" class="btn dropdown-toggle" id="menu1" data-toggle = "dropdown">重庆
+					<span class="caret"></span>
+				</button>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+				<li role="presentation" class="dropdown-header">重庆的区县</li>
+				<li role="presentation">
+					<a role="menuitem" tabindex="-1" href="#">綦江</a>
+				</li>
+				<li role="presentation">
+					<a role="menuitem" tabindex="-1" href="#">南岸</a>
+				</li>
+				<li role="presentation">
+					<a role="menuitem" tabindex="-1" href="#">北碚</a>
+				</li>
+				<li role="presentation">
+					<a role="menuitem" tabindex="-1" href="#">江北</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+			-->
+<!--<div class="container">
+		
+	
+			<div class="dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">主题
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">Java</a>
+        </li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">数据挖掘</a>
+        </li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">数据通信/网络</a>
+        </li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
+        </li>
+    </ul>
+</div>
+		
+</div>				-->
+		<!--bootstrap插件-->
+<script src="../bootstrap/js/jquery-3.1.1.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+	</body>
+</html>
